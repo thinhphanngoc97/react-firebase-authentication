@@ -1,0 +1,166 @@
+.App {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+
+    .header {
+        padding: 20px;
+
+        display: flex;
+        justify-content: flex-end;
+
+        color: white;
+        letter-spacing: 1px;
+
+        background-color: black;
+
+        .header-user-info {
+            display: flex;
+            align-items: center;
+
+            p {
+                margin: 0px;
+            }
+
+            & > div {
+                display: flex;
+                align-items: center;
+
+                div {
+                    border-radius: 50%;
+                    overflow: hidden;
+
+                    width: 45px;
+                    height: 45px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                p {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .header-user-option {
+            display: flex;
+            align-items: center;
+
+            .dropdown {
+
+                & > button {
+                    background: none;
+                    outline: none;
+
+                    &:hover {
+                        color: white;
+                    }
+
+                    &:not(:hover) {
+                        color: white;
+                    }      
+                }
+
+                .dropdown-menu {
+                    color: black;
+
+                    button {
+                        background: none;
+                        border: none;
+                        outline: none;
+                        display: block;
+
+                        & + button {
+                            margin-top: 10px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    .sign-up-modal {
+        outline: none;
+        
+        .modal-content {
+            padding: 50px 20px;
+
+            .sign-up-form {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    height: 42px;
+
+                    & + label {
+                        margin-top: 20px;
+                    }
+
+                    & + button {
+                        margin-top: 40px;
+                        padding: 10px;
+
+                        border: none;
+                        background-color: #0B9;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .sign-in-modal {
+        outline: none;
+        
+        .modal-content {
+            padding: 50px 20px;
+
+            .sign-in-form {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    height: 42px;
+
+                    & + label {
+                        margin-top: 20px;
+                    }
+
+                    & + button {
+                        margin-top: 40px;
+                        padding: 10px;
+
+                        border: none;
+                        background-color: #0B9;
+                        color: white;
+                    }
+                }
+            }
+
+            
+            .btn-google {
+                margin-top: 10px;
+                padding: 10px;
+
+                width: 100%;
+
+                border: solid 1px;
+                background-color: #dd4b39;
+                color: white;
+            }
+
+            .btn-facebook {
+                margin-top: 10px;
+                padding: 10px;
+
+                width: 100%;
+
+                border: none;
+                background-color: #3B5998;
+                color: white;
+            }
+        }
+    }
+}
